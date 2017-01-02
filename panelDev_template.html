@@ -1,0 +1,56 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="lib/require.js"></script>
+    <script type="text/javascript">
+      var Global_Root = "./";
+    </script>
+    <script src="js/index.js"></script>
+    <script src="js/HeadingMacro.js"></script>
+  </head><body class="bg" style="background-image: url('https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/background.jpg')">
+    <!--Panel block-->
+    <div class="section mjpanel" id="panel_game">
+      <!--content block-->
+      
+      <a name="版面錨點"></a>
+      <div class="panel-heading">
+        <h1>版面名稱</h1>
+        <br>
+        <br>
+      </div>
+      
+      <!--content block-->
+    </div>
+    <!--Panel block-->
+    <a id="back-to-top" href="#" class="back-to-top btn btn-lg" role="button" title="回到最上頁" data-placement="left">
+      <span class="glyphicon glyphicon-arrow-up">
+      <script>
+        $(document).ready(function(){
+          $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                  $('#back-to-top').fadeIn();
+              } else {
+                  $('#back-to-top').fadeOut();
+              }
+          });
+          // scroll body to 0px on click
+          $('#back-to-top').click(function () {
+              $('#back-to-top').tooltip('hide');
+              $('body,html').animate({
+                  scrollTop: 0
+              }, 800);
+              return false;
+          });
+
+          $('#back-to-top').tooltip('show');
+		});
+      </script>
+    </span></a>
+  
+
+</body></html>

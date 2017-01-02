@@ -12,7 +12,7 @@
     </script>
     <script src="js/index.js"></script>
     <script src="js/HeadingMacro.js"></script>
-  </head><body class="bg">
+  </head><body class="bg" style="background-image: url('https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/background.jpg')">
     <div class="mjheading">
       <a href="#" class="hidden-lg hidden-md"><img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/cover.jpg" class="img-responsive"></a>
       <div class="mjheading-wrapper hidden-sm hidden-xs" id="heading-container">
@@ -28,7 +28,7 @@
             <p>快速了解《魔躍》在玩什麼</p>
           </div>
           <div class="col-md-3 col-xs-6">
-            <a href="#"><img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/story.jpg" class="img-responsive img-rounded"></a>
+            <a href="#story"><img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/story.jpg" class="img-responsive img-rounded"></a>
             <h2>劇情故事
               <br>
             </h2>
@@ -37,43 +37,24 @@
             </p>
           </div>
           <div class="col-md-3 col-xs-6">
-            <a href="#"><img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/developer.jpg" class="img-responsive img-rounded"></a>
+            <a href="#developer"><img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/developer.jpg" class="img-responsive img-rounded"></a>
             <h2>開發人員</h2>
             <p>團隊簡介，來交流/參與開發吧</p>
           </div>
           <div class="col-md-3 col-xs-6">
-            <a href="#"><img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/more.jpg" class="img-responsive img-rounded"></a>
+            <a href="#more"><img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/more.jpg" class="img-responsive img-rounded"></a>
             <h2>更多內容</h2>
             <p>影片、FB粉絲團、有關魔躍23事</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="section mjpanel">
-      <a name="game"></a>
-      <div class="panel-heading">
-        <h1>遊戲導覽</h1>
-      </div>
-      <div class="container">
-        <div class="row mjpanel-row">
-          <div class="col-md-6">
-            <img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/game.jpg" class="img-responsive">
-          </div>
-          <div class="col-md-6">
-            <p class="mjpaneltext">PC/Moblie遊戲《魔躍MonsterJump》
-              <br>以跳棋與戰略作為基礎，加入角色扮演進行豐富多變的策略搭配，為了抵抗日漸強大而威脅到魔物的人類們而奮鬥。&nbsp;</p>
-          </div>
-        </div>
-        <div class="row mjpanel-row">
-          <div class="col-md-6">
-            <img src="https://dl.dropboxusercontent.com/u/87239069/MonsterJump/img/game.jpg" class="img-responsive">
-          </div>
-          <div class="col-md-6">
-            <p class="mjpaneltext">每一隻角色有自己特有的行動效果，會在跳過棋子或障礙物時自動發動，可造成強力攻擊或替隊友施放增益狀態，甚至是將場上的其他棋子移動變位、扭轉局勢。</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--Panel block-->
+    <div class="section mjpanel" id="panel_game"></div>
+    <div class="section mjpanel" id="panel_story"></div>
+    <div class="section mjpanel" id="panel_developer"></div>
+    <div class="section mjpanel" id="panel_more"></div>
+    <!--Panel block-->
     <footer class="section mjfooter">
       <div class="container">
         <div class="row">
@@ -103,12 +84,12 @@
         </div>
       </div>
     </footer>
-    <a id="back-to-top" href="#" class="back-to-top btn btn-info btn-lg" role="button" title="回到最上頁" data-placement="left">
+    <a id="back-to-top" href="#" class="back-to-top btn btn-lg" role="button" title="回到最上頁" data-placement="left">
       <span class="glyphicon glyphicon-arrow-up">
       <script>
         $(document).ready(function(){
           $(window).scroll(function () {
-                if ($(this).scrollTop() > 50) {
+              if ($(this).scrollTop() > 50) {
                   $('#back-to-top').fadeIn();
               } else {
                   $('#back-to-top').fadeOut();
@@ -124,7 +105,7 @@
           });
 
           $('#back-to-top').tooltip('show');
-		});
+        });
       </script>
     </span></a>
   
