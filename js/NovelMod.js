@@ -1,4 +1,4 @@
-var heroImg_root = Global_Root+"img/hero/";
+var heroNovel_root = "https://dl.dropboxusercontent.com/u/87239069/MonsterJump/"+"json/story/";
 
 var panel_id = "#panel_story";
 var novelMode_id = "#novelMode";
@@ -38,15 +38,11 @@ var NovelMod = function (){
 			console.log("get storyPanel Err");
 		}
 
-		console.log($novelMode);
-
 
 		$("#modal-close-btn").click(function(){
 			novelMod.close();
 			return false;
 		});
-
-		$('#modal-close-btn').tooltip('show');
 
 		// $novelMode.hide();
 		
@@ -79,9 +75,9 @@ var NovelMod = function (){
 		}
 
 		// $novelMode.show();
-		$novelMode.modal({ keyboard: false });
+		
 
-		var url = Global_Root+"json/story/"+heroName+".json";
+		var url = heroNovel_root+heroName+".json";
 		try{
 			$.get(url, function(data){
 				if (!data){
@@ -94,9 +90,14 @@ var NovelMod = function (){
 				$heroSubtitle.html(data["subtitle"]);
 				$heroNovel.html(data["novel"]);
 
-				console.log($heroImg.html());
+
+				$novelMode.modal({ keyboard: false });
+
+				$('#modal-close-btn').tooltip('show');
+
 
 				window.location.href = novelMode_Link;
+
 			}, "json");
 		}catch(e){
 			console.log("load err: "+e);
