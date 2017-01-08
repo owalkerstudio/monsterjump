@@ -6819,7 +6819,7 @@ body {
   background-color: rgba(50, 50, 50, 0.7);
 }
 .wide-modal {
-    width: 70%;
+  width: 70%;
 }
 .modal-close-btn {
   cursor: pointer;
@@ -6830,4 +6830,10 @@ body {
 }
 .heroImg {
   background-color: rgba(70, 70, 70, 0.7);
+}
+.strong {
+  color: #f5bc44;
+}
+.vertical-center {
+  vertical-align: middle;
 }
