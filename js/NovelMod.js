@@ -1,4 +1,5 @@
-var heroNovel_root = "https://dl.dropboxusercontent.com/u/87239069/MonsterJump/"+"json/story/";
+// var heroNovel_root = "https://dl.dropboxusercontent.com/u/87239069/MonsterJump/"+"json/story/";
+var heroNovel_root = "././"+"json/story/";
 
 var panel_id = "#panel_story";
 var novelMode_id = "#novelMode";
